@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 20rem;
+  margin: 0.5rem auto;
+}
+
+header img { width: 50%; }
+
+main {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+main img { width: 100%; }
+
+.content { text-align: center; }
+
+h1 { 
+    font-size: 1.6rem; 
+    font-family: 'Poppins';
+}
+
+.content p { 
+    font-size: 14px; 
+    margin: 1.6rem 0;
+}
+
+button {
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  width: 150px;
+  box-shadow: 1px 5px 9px 0px black;
+}
+
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+footer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .icon {
+    border: 1px solid white;
+    border-radius: 90%;
+    padding: 2px 5px;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    body { max-width: 60rem; }
+
+    header img { width: 25%; }
+
+    main {
+        flex-direction: row;
+        /*margin-left: 1.5rem;*/
+        gap: 1rem;
+        margin-top: 4rem;
+    }
+
+    main img { width: 60%; }
+
+    .content { 
+        margin-top: 2rem; 
+        text-align: start;
+    }
+
+    footer { justify-content: end; }
+}
